@@ -67,7 +67,6 @@ service AnalyticsService @(path:'/analytics') {
   @readonly
   entity Travels as projection on my.Travel {
     *,
-    @Common.Label: '{i18n>CustomerName}'
     to_Customer.FirstName || ' ' || to_Customer.LastName as CustomerName : String,
   };
 

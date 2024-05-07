@@ -13,7 +13,7 @@ annotate schema.Travel with @title: '{i18n>Travel}' {
   BookingFee   @title: '{i18n>BookingFee}'    @Measures.ISOCurrency: CurrencyCode_code;
   TotalPrice   @title: '{i18n>TotalPrice}'    @Measures.ISOCurrency: CurrencyCode_code;
   TravelStatus @title: '{i18n>TravelStatus}'  @Common.Text: TravelStatus.name     @Common.TextArrangement: #TextOnly;
-  to_Customer  @title: '{i18n>CustomerID}'    @Common.Text: to_Customer.LastName;
+  to_Customer;
   to_Agency    @title: '{i18n>AgencyID}'      @Common.Text: to_Agency.Name;
 }
 
@@ -32,7 +32,7 @@ annotate schema.Booking with @title: '{i18n>Booking}' {
   FlightPrice   @title: '{i18n>FlightPrice}'    @Measures.ISOCurrency: CurrencyCode_code;
   BookingStatus @title: '{i18n>BookingStatus}'  @Common.Text: BookingStatus.name    @Common.TextArrangement: #TextOnly;
   to_Carrier    @title: '{i18n>AirlineID}'      @Common.Text: to_Carrier.Name;
-  to_Customer   @title: '{i18n>CustomerID}'     @Common.Text: to_Customer.LastName;
+  to_Customer;
 }
 
 annotate schema.BookingStatus with {

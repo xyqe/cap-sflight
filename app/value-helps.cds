@@ -26,7 +26,6 @@ annotate schema.Travel {
 
   to_Customer @Common.ValueList: {
     CollectionPath : 'Passenger',
-    Label : 'Customer ID',
     Parameters : [
       {$Type: 'Common.ValueListParameterInOut', LocalDataProperty: to_Customer_CustomerID, ValueListProperty: 'CustomerID'},
       {$Type: 'Common.ValueListParameterDisplayOnly', ValueListProperty: 'FirstName'},
